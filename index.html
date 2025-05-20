@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Premium Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">Style<span>Hub</span></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="collections.html">Collections</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></button>
+            <button class="account-btn"><i class="fas fa-user"></i></button>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button class="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Summer Collection 2023</h2>
+            <p>Discover our premium selection of summer outfits</p>
+            <a href="collections.html" class="shop-now">Shop Now</a>
+        </div>
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2042&q=80')"></div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slide-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80" alt="Men's Clothing">
+                <div class="category-info">
+                    <h3>Men's</h3>
+                    <a href="men.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Women's Clothing">
+                <div class="category-info">
+                    <h3>Women's</h3>
+                    <a href="women.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80" alt="Kids' Clothing">
+                <div class="category-info">
+                    <h3>Kids'</h3>
+                    <a href="kids.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Accessories">
+                <div class="category-info">
+                    <h3>Accessories</h3>
+                    <a href="collections.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="section-header">
+            <h2 class="section-title">Featured Products</h2>
+            <a href="collections.html" class="view-all">View All</a>
+        </div>
+        <div class="product-grid">
+            <!-- Products loaded via JavaScript -->
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Limited Time Offer</h2>
+            <p>Get 30% off on all summer collection items. Use code: SUMMER30</p>
+            <a href="sale.html" class="shop-now">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="trending-now">
+        <div class="section-header">
+            <h2 class="section-title">Trending Now</h2>
+            <a href="collections.html" class="view-all">View All</a>
+        </div>
+        <div class="trending-grid">
+            <!-- Products loaded via JavaScript -->
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content" id="auth-section">
+            <h2>Create an Account</h2>
+            <p>Get access to exclusive offers and faster checkout</p>
+            <form class="newsletter-form" id="signup-form">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Your email address" required>
+                <input type="password" id="password" placeholder="Password (min 6 characters)" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+            <div id="auth-message" style="display:none; margin-top:15px;"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>StyleHub</h3>
+                <p>Premium clothing for everyone. Quality meets style in our carefully curated collections.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="men.html">Men's Clothing</a></li>
+                    <li><a href="women.html">Women's Clothing</a></li>
+                    <li><a href="kids.html">Kids' Clothing</a></li>
+                    <li><a href="collections.html">Accessories</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</li>
+                    <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i> info@stylehub.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 StyleHub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items loaded via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span>$0.00</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Firebase and app scripts -->
+    <script type="module">
+        // Import Firebase modules
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { 
+            getAuth, 
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            signOut,
+            onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+        import { 
+            getFirestore, 
+            doc, 
+            setDoc, 
+            serverTimestamp 
+        } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAV2DXCE7XuG_iXb1vCW8xxROof5xQ0fY4",
+            authDomain: "gamehub-774ac.firebaseapp.com",
+            projectId: "gamehub-774ac",
+            storageBucket: "gamehub-774ac.appspot.com",
+            messagingSenderId: "56312893637",
+            appId: "1:56312893637:web:b4cd71b1b5050efd2520ac",
+            measurementId: "G-TYTM1NE7VR"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Auth UI elements
+        const signupForm = document.getElementById('signup-form');
+        const loginLink = document.getElementById('login-link');
+        const authMessage = document.getElementById('auth-message');
+        const authSection = document.getElementById('auth-section');
+        const accountBtn = document.querySelector('.account-btn');
+
+        // Sign up function
+        if (signupForm) {
+            signupForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const name = signupForm['name'].value;
+                const email = signupForm['email'].value;
+                const password = signupForm['password'].value;
+                
+                try {
+                    // Create user
+                    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                    const user = userCredential.user;
+                    
+                    // Save user data to Firestore
+                    await setDoc(doc(db, "users", user.uid), {
+                        name: name,
+                        email: email,
+                        createdAt: serverTimestamp(),
+                        cart: []
+                    });
+                    
+                    showAuthMessage("Account created successfully!", "success");
+                    updateAuthUI(user);
+                } catch (error) {
+                    showAuthMessage(error.message, "error");
+                    console.error("Signup error:", error);
+                }
+            });
+        }
+
+        // Login link handler
+        if (loginLink) {
+            loginLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Simple login implementation (replace with modal in production)
+                const email = prompt("Enter your email:");
+                const password = prompt("Enter your password:");
+                
+                if (email && password) {
+                    signInWithEmailAndPassword(auth, email, password)
+                        .then((userCredential) => {
+                            const user = userCredential.user;
+                            showAuthMessage("Logged in successfully!", "success");
+                            updateAuthUI(user);
+                        })
+                        .catch((error) => {
+                            showAuthMessage(error.message, "error");
+                        });
+                }
+            });
+        }
+
+        // Auth state observer
+        onAuthStateChanged(auth, (user) => {
+            updateAuthUI(user);
+        });
+
+        // Update UI based on auth state
+        function updateAuthUI(user) {
+            if (user) {
+                // User is signed in
+                if (authSection) {
+                    authSection.innerHTML = `
+                        <h2>Welcome back!</h2>
+                        <p>You're logged in and ready to shop.</p>
+                        <button id="logout-btn" class="shop-now">Log Out</button>
+                    `;
+                    
+                    document.getElementById('logout-btn').addEventListener('click', () => {
+                        signOut(auth).then(() => {
+                            showAuthMessage("Logged out successfully", "success");
+                        });
+                    });
+                }
+                
+                if (accountBtn) {
+                    accountBtn.innerHTML = `<i class="fas fa-user-check"></i>`;
+                    accountBtn.title = "My Account";
+                }
+            } else {
+                // User is signed out
+                if (authSection) {
+                    authSection.innerHTML = `
+                        <h2>Create an Account</h2>
+                        <p>Get access to exclusive offers and faster checkout</p>
+                        <form class="newsletter-form" id="signup-form">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                            <input type="email" id="email" placeholder="Your email address" required>
+                            <input type="password" id="password" placeholder="Password (min 6 characters)" required>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+                        <div id="auth-message" style="display:none; margin-top:15px;"></div>
+                    `;
+                }
+                
+                if (accountBtn) {
+                    accountBtn.innerHTML = `<i class="fas fa-user"></i>`;
+                    accountBtn.title = "Account";
+                }
+            }
+        }
+
+        // Show auth messages
+        function showAuthMessage(message, type) {
+            if (!authMessage) return;
+            
+            authMessage.textContent = message;
+            authMessage.style.display = "block";
+            authMessage.style.color = type === "success" ? "green" : "red";
+            
+            setTimeout(() => {
+                authMessage.style.display = "none";
+            }, 5000);
+        }
+    </script>
+
+    <!-- Main app script -->
+    <script src="script.js"></script>
+</body>
+</html>

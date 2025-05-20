@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids' Fashion | StyleHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html" class="logo">Style<span>Hub</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html" class="active">Kids</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="collections.html">Collections</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart"></i><span class="cart-count">0</span>
+        </button>
+        <button class="account-btn"><i class="fas fa-user"></i></button>
+      </div>
+    </header>
+
+    <div class="search-overlay">
+      <div class="search-container">
+        <input type="text" placeholder="Search for products..." />
+        <button class="close-search"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: url('https://cdn.media.amplience.net/i/gapprod/SU258697_NA_img_DESK?fmt=webp  ');
+      "
+    >
+      <div class="hero-content">
+        <h1>Kids' Collection</h1>
+        <p>Adorable styles for your little ones</p>
+      </div>
+    </section>
+
+    <section class="subcategories">
+      <h2 class="section-title">Shop by Age</h2>
+      <div class="subcategory-grid">
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/Search/Lge/AM3887.jpg?im=Resize,width=450 "
+            alt="Newborn"
+          />
+          <h3>Newborn (0-12m)</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="data:image/jpeg;base64,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      "
+            alt="Toddler"
+          />
+          <h3>Toddler (1-3y)</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://image.yfswebstatic.com/origin/event/image-a6a4deff-afeb-4daf-8fe3-24b5713bfae2-1739607179725.jpg?f=webp&s=400x0            "
+            alt="Kids"
+          />
+          <h3>Kids (4-8y)</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://cdn11.bigcommerce.com/s-bc28504t/images/stencil/1280x1280/products/1906/5685/ST06C-403_5__42431.1738259262.jpg?c=2https://cdn11.bigcommerce.com/s-bc28504t/images/stencil/1280x1280/products/1906/5685/ST06C-403_5__42431.1738259262.jpg?c=2       "
+            alt="Tweens"
+          />
+          <h3>Tweens (9-12y)</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="section-header">
+        <h2 class="section-title">Best Sellers</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-badge">Organic</div>
+          <div class="age-badge">Newborn</div>
+          <img
+            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="Organic Cotton Bodysuit Set"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Organic Cotton Bodysuit Set</h3>
+            <div class="product-price">
+              <span class="current-price">$24.99</span>
+              <span class="original-price">$29.99</span>
+            </div>
+            <button class="add-to-cart" data-id="301">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">Popular</div>
+          <div class="age-badge">Toddler</div>
+          <img
+            src="https://images.unsplash.com/photo-1604917019116-55ac8525666b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="Dinosaur Hoodie & Pants Set"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Dinosaur Hoodie & Pants Set</h3>
+            <div class="product-price">
+              <span class="current-price">$34.99</span>
+              <span class="original-price">$39.99</span>
+            </div>
+            <button class="add-to-cart" data-id="302">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">Bundle</div>
+          <div class="age-badge">Kids</div>
+          <img
+            src="https://images.unsplash.com/photo-1600185365446-6f3a0a0a083a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="School Uniform Package"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-title">School Uniform Package (3 Items)</h3>
+            <div class="product-price">
+              <span class="current-price">$49.99</span>
+              <span class="original-price">$59.99</span>
+            </div>
+            <button class="add-to-cart" data-id="303">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-badge">Trending</div>
+          <div class="age-badge">Tweens</div>
+          <img
+            src="https://images.unsplash.com/photo-1600185366674-3a5d0f494d0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Graphic Tee & Jeans Combo"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Graphic Tee & Jeans Combo</h3>
+            <div class="product-price">
+              <span class="current-price">$39.99</span>
+              <span class="original-price">$49.99</span>
+            </div>
+            <button class="add-to-cart" data-id="304">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special-offers">
+      <h2 class="section-title">Special Offers for Kids</h2>
+      <div class="offer-grid">
+        <div
+          class="offer-card"
+          style="
+            background-image: url('https://theridgekids.com/cdn/shop/files/tween-dresses-or-girls-floral-purple-print-sleeveless-dressor-design-history-the-ridge-kids-4_720x.jpg?v=1719461916');
+          "
+        >
+          <div class="offer-content">
+            <h3>Bundle & Save</h3>
+            <p>Buy any 3 items and get 15% off</p>
+            <a href="#" class="offer-btn">Shop Now</a>
+          </div>
+        </div>
+        <div
+          class="offer-card"
+          style="
+            background-image: url('https://ifstudies.b-cdn.net/ifs-admin/resources/blog/tween.jpg?quality=80&width=1700https://ifstudies.b-cdn.net/ifs-admin/resources/blog/tween.jpg?quality=80&width=1700https://ifstudies.b-cdn.net/ifs-admin/resources/blog/tween.jpg?quality=80&width=1700https://ifstudies.b-cdn.net/ifs-admin/resources/blog/tween.jpg?quality=80&width=1700');
+          "
+        >
+          <div class="offer-content">
+            <h3>Back to School</h3>
+            <p>Uniforms starting at $12.99</p>
+            <a href="#" class="offer-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner" style="background-color: #f0f7ff; color: #0066cc">
+      <div class="banner-content">
+        <h2>Join Our Kids Club</h2>
+        <p>Get exclusive offers and 10% off your first purchase</p>
+        <a
+          href="#"
+          class="shop-now"
+          style="background-color: #0066cc; color: white"
+          >Sign Up Now</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>StyleHub</h3>
+          <p>
+            Premium clothing for everyone. Quality meets style in our carefully
+            curated collections.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="men.html">Men's Clothing</a></li>
+            <li><a href="women.html">Women's Clothing</a></li>
+            <li><a href="kids.html">Kids' Clothing</a></li>
+            <li><a href="collections.html">Accessories</a></li>
+            <li><a href="sale.html">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City
+            </li>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@stylehub.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 StyleHub. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items loaded via JavaScript -->
+      </div>
+      <div class="cart-total">
+        <p>Total: <span>$0.00</span></p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Kids' specific products for cart functionality
+      window.kidsProducts = [
+        {
+          id: 301,
+          title: "Organic Cotton Bodysuit Set",
+          price: 24.99,
+          originalPrice: 29.99,
+          image:
+            "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+          badge: "Organic",
+          ageGroup: "Newborn",
+        },
+        {
+          id: 302,
+          title: "Dinosaur Hoodie & Pants Set",
+          price: 34.99,
+          originalPrice: 39.99,
+          image:
+            "https://images.unsplash.com/photo-1604917019116-55ac8525666b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+          badge: "Popular",
+          ageGroup: "Toddler",
+        },
+        {
+          id: 303,
+          title: "School Uniform Package (3 Items)",
+          price: 49.99,
+          originalPrice: 59.99,
+          image:
+            "https://images.unsplash.com/photo-1600185365446-6f3a0a0a083a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          badge: "Bundle",
+          ageGroup: "Kids",
+        },
+        {
+          id: 304,
+          title: "Graphic Tee & Jeans Combo",
+          price: 39.99,
+          originalPrice: 49.99,
+          image:
+            "https://images.unsplash.com/photo-1600185366674-3a5d0f494d0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          badge: "Trending",
+          ageGroup: "Tweens",
+        },
+      ];
+    </script>
+  </body>
+</html>

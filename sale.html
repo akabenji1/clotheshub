@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale Items | StyleHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html" class="logo">Style<span>Hub</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="sale.html" class="active">Sale</a></li>
+          <li><a href="collections.html">Collections</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart"></i><span class="cart-count">0</span>
+        </button>
+        <button class="account-btn"><i class="fas fa-user"></i></button>
+      </div>
+    </header>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      "
+    >
+      <div class="hero-content">
+        <h1>End of Season Sale</h1>
+        <p>Up to 70% off selected items</p>
+      </div>
+    </section>
+
+    <section class="sale-categories">
+      <h2 class="section-title">Shop Sale Categories</h2>
+      <div class="sale-grid">
+        <a href="#" class="sale-category" style="background-color: #ff6b6b">
+          <h3>50-70% Off</h3>
+          <p>Final reductions</p>
+        </a>
+        <a href="#" class="sale-category" style="background-color: #4ecdc4">
+          <h3>30-50% Off</h3>
+          <p>Seasonal favorites</p>
+        </a>
+        <a href="#" class="sale-category" style="background-color: #ff9f1c">
+          <h3>Under $20</h3>
+          <p>Amazing deals</p>
+        </a>
+        <a href="#" class="sale-category" style="background-color: #292f36">
+          <h3>Clearance</h3>
+          <p>Last chance</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="section-header">
+        <h2 class="section-title">Hot Deals</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-grid">
+        <!-- Products loaded via JavaScript -->
+      </div>
+    </section>
+
+    <section class="banner" style="background-color: #fff8e1; color: #ff6f00">
+      <div class="banner-content">
+        <h2>Extra 15% Off Sale Items</h2>
+        <p>Use code: EXTRA15 at checkout</p>
+        <a
+          href="#"
+          class="shop-now"
+          style="background-color: #ff6f00; color: white"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Same as index.html -->
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <!-- Same as index.html -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Sale items
+      const saleProducts = [
+        {
+          id: 401,
+          title: "Designer Blazer",
+          price: 89.99,
+          originalPrice: 199.99,
+          image:
+            "https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+          badge: "55% Off",
+        },
+        {
+          id: 402,
+          title: "Cashmere Sweater",
+          price: 59.99,
+          originalPrice: 129.99,
+          image:
+            "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2059&q=80",
+          badge: "54% Off",
+        },
+        {
+          id: 403,
+          title: "Leather Crossbody Bag",
+          price: 49.99,
+          originalPrice: 99.99,
+          image:
+            "https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+          badge: "50% Off",
+        },
+        {
+          id: 404,
+          title: "Kids' Winter Coat",
+          price: 29.99,
+          originalPrice: 59.99,
+          image:
+            "https://arcticwaveco.com/cdn/shop/files/CodyAWblackjacketsnowball_293d7207-df0c-43a2-b85f-10f219e26a37.jpg?v=1722872669&width=1445",
+          badge: "50% Off",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadCategoryProducts(saleProducts);
+      });
+    </script>
+  </body>
+</html>

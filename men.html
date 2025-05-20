@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Fashion | StyleHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html" class="logo">Style<span>Hub</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html" class="active">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="collections.html">Collections</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart"></i><span class="cart-count">0</span>
+        </button>
+        <button class="account-btn"><i class="fas fa-user"></i></button>
+      </div>
+    </header>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      "
+    >
+      <div class="hero-content">
+        <h1>Men's Collection</h1>
+        <p>Elevate your wardrobe with premium menswear</p>
+      </div>
+    </section>
+
+    <section class="subcategories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="subcategory-grid">
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2059&q=80"
+            alt="T-Shirts"
+          />
+          <h3>T-Shirts</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+            alt="Shirts"
+          />
+          <h3>Shirts</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="Jeans"
+          />
+          <h3>Jeans</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+            alt="Jackets"
+          />
+          <h3>Jackets</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="section-header">
+        <h2 class="section-title">Trending Now</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-grid">
+        <!-- Products loaded via JavaScript -->
+      </div>
+    </section>
+
+    <section class="banner" style="background-color: #2a2a2a; color: white">
+      <div class="banner-content">
+        <h2>Men's Essentials</h2>
+        <p>Build your perfect capsule wardrobe with our must-have pieces</p>
+        <a href="#" class="shop-now">Shop The Edit</a>
+      </div>
+    </section>
+
+    <!-- Include the same footer as index.html -->
+    <footer class="footer">
+      <!-- Footer content from index.html -->
+    </footer>
+
+    <!-- Include the same cart sidebar as index.html -->
+    <div class="cart-sidebar">
+      <!-- Cart content from index.html -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Men's specific products
+      const mensProducts = [
+        {
+          id: 101,
+          title: "Premium Cotton Tee",
+          price: 34.99,
+          originalPrice: 44.99,
+          image:
+            "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2059&q=80",
+          badge: "Bestseller",
+        },
+        {
+          id: 102,
+          title: "Slim Fit Dress Shirt",
+          price: 59.99,
+          originalPrice: 69.99,
+          image:
+            "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80",
+          badge: "New",
+        },
+        {
+          id: 103,
+          title: "Classic Denim Jeans",
+          price: 79.99,
+          originalPrice: 89.99,
+          image:
+            "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+          badge: "Popular",
+        },
+        {
+          id: 104,
+          title: "Bomber Jacket",
+          price: 129.99,
+          originalPrice: 149.99,
+          image:
+            "https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+          badge: "Limited",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadCategoryProducts(mensProducts);
+      });
+    </script>
+  </body>
+</html>

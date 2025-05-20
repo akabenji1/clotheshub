@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Fashion | StyleHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html" class="logo">Style<span>Hub</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html" class="active">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="collections.html">Collections</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <button class="cart-btn">
+          <i class="fas fa-shopping-cart"></i><span class="cart-count">0</span>
+        </button>
+        <button class="account-btn"><i class="fas fa-user"></i></button>
+      </div>
+    </header>
+
+    <section
+      class="category-hero"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      "
+    >
+      <div class="hero-content">
+        <h1>Women's Collection</h1>
+        <p>Discover your perfect style statement</p>
+      </div>
+    </section>
+
+    <section class="subcategories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="subcategory-grid">
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
+            alt="Dresses"
+          />
+          <h3>Dresses</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Tops"
+          />
+          <h3>Tops</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
+            alt="Jackets"
+          />
+          <h3>Jackets</h3>
+        </a>
+        <a href="#" class="subcategory-card">
+          <img
+            src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="Accessories"
+          />
+          <h3>Accessories</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="section-header">
+        <h2 class="section-title">New Arrivals</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <div class="product-grid">
+        <!-- Products loaded via JavaScript -->
+      </div>
+    </section>
+
+    <section class="banner" style="background-color: #f8f3e6; color: #333">
+      <div class="banner-content">
+        <h2>Spring Essentials</h2>
+        <p>Refresh your wardrobe with our seasonal must-haves</p>
+        <a
+          href="#"
+          class="shop-now"
+          style="background-color: #333; color: white"
+          >Shop The Collection</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Same as index.html -->
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <!-- Same as index.html -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Women's specific products
+      const womensProducts = [
+        {
+          id: 201,
+          title: "Floral Summer Dress",
+          price: 59.99,
+          originalPrice: 79.99,
+          image:
+            "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80",
+          badge: "New",
+        },
+        {
+          id: 202,
+          title: "Silk Blouse",
+          price: 49.99,
+          originalPrice: 69.99,
+          image:
+            "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          badge: "Popular",
+        },
+        {
+          id: 203,
+          title: "Denim Jacket",
+          price: 89.99,
+          originalPrice: 109.99,
+          image:
+            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80",
+          badge: "Bestseller",
+        },
+        {
+          id: 204,
+          title: "Designer Handbag",
+          price: 129.99,
+          originalPrice: 159.99,
+          image:
+            "https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+          badge: "Luxury",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadCategoryProducts(womensProducts);
+      });
+    </script>
+  </body>
+</html>
